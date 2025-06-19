@@ -66,7 +66,8 @@ app.use(express.static(path.join(__dirname, 'uploads')));
 app.use(express.static(path.join(__dirname, 'thumbnails')));
 app.use(cors({ origin: true, credentials: true }));
 app.use(session({
-  secret: generateSessionSecret(),
+  //secret: generateSessionSecret(),
+  secret: "sdf654s56df231vdf21",
   resave: true,
   saveUninitialized: false,
   cookie: { secure: false, sameSite: 'lax', maxAge: 1000 * 60 * 60 }
